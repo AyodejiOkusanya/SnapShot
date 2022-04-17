@@ -1,12 +1,23 @@
 import { Component } from "react";
+import "./Image.css";
 
 export class Image extends Component {
   static defaultProps = {
-    width: "10px",
-    height: "10px",
+    width: "230px",
+    height: "148px",
   };
   render() {
     const { width, height, url, title } = this.props;
-    return <img src={url} alt={title} width={width} height={height} />;
+    return (
+      <div class="image-container">
+        <img
+          class="image"
+          src={url}
+          alt={title}
+          width={width}
+          height={height}
+        />
+      </div>
+    );
   }
 }

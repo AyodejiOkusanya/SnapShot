@@ -1,0 +1,16 @@
+.image {
+  /* transform: scale(1.25); */
+  /* transition: transform 1.25s; */
+  margin: 5px;
+  transition: transform 1.25s;
+}
+
+.image:hover {
+  transform: scale(1.25);
+}
+
+.image-container {
+  width: 230px;
+  height: 148px;
+  overflow: hidden;
+}
